@@ -2,10 +2,13 @@
 defineProps<{
   msg: string
 }>()
+
+const name = ref('Dio')
 </script>
 
 <template>
   <div class="greetings">
+    <h1>Hello {{ name }}</h1>
     <h1 class="green">{{ msg }}</h1>
     <h3>
       You’ve successfully created a project with
