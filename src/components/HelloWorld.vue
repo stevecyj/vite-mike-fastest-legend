@@ -4,10 +4,29 @@ defineProps<{
 }>()
 
 const name = ref('Dio')
+
+const { locale } = useI18n()
+const handleChangeLanguage = (e: Event) => {
+  const target = e.target as HTMLSelectElement | null
+  if (target) {
+    locale.value = target.value
+  }
+}
 </script>
 
 <template>
   <div class="greetings">
+    <div class="card">
+      <div>
+        切換語言：
+        <select @change="handleChangeLanguage">
+          <option value="zh-TW">中文</option>
+          <option value="en-US">English</option>
+        </select>
+      </div>
+      <p>{{ $t('edit') }} <code>components/HelloWorld.vue</code> {{ $t('__text-test-HMR__') }}</p>
+    </div>
+    <h1>{{ $t('edit') }}</h1>
     <h1>Hello {{ name }}</h1>
     <h1 class="green">{{ msg }}</h1>
     <h3>
