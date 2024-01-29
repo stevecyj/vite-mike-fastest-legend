@@ -1,6 +1,8 @@
 import { fileURLToPath, URL } from 'node:url'
 import Components from "unplugin-vue-components/vite";
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts';
 import path from 'path'
 
 import { defineConfig } from 'vite'
@@ -26,7 +28,9 @@ export default defineConfig({
       iconDirs: [path.resolve(process.cwd(), 'src/assets/svg')],
       // 指定symbolId格式
       symbolId: 'icon-[dir]-[name]',
-    })
+    }),
+    Pages(),
+    Layouts()
   ],
   resolve: {
     alias: {
