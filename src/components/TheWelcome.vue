@@ -4,7 +4,7 @@
 <template>
   <WelcomeItem>
     <template #icon>
-      <SvgIcon name="Documentation" />
+      <SvgIcon name="Documentation" className="Dio"/>
     </template>
     <template #heading>Documentation</template>
 
