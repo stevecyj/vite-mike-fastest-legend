@@ -1,10 +1,9 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <WelcomeItem>
     <template #icon>
-      <SvgIcon name="Documentation" className="Dio"/>
+      <SvgIcon name="Documentation" className="Dio" />
     </template>
     <template #heading>Documentation</template>
 
@@ -71,7 +70,7 @@
 
   <WelcomeItem>
     <template #icon>
-      <SvgIcon name="Support" color="red"/>
+      <SvgIcon name="Support" color="red" />
     </template>
     <template #heading>Support Vue</template>
 
