@@ -26,12 +26,9 @@ const props = defineProps({
 const symbolId = computed(() => `#${props.prefix}-${props.name}`)
 const svgClass = computed(() => (props.className ? 'svg-icon ' + props.className : 'svg-icon'))
 </script>
-<style>
+
+<style lang="scss" scoped>
 .svg-icon {
-  width: 50%;
-  height: 50%;
-  max-width: 100px;
-  max-height: 100px;
   fill: currentColor;
   overflow: hidden;
 }

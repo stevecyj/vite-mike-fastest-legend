@@ -79,3 +79,10 @@
     <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
   </WelcomeItem>
 </template>
+
+<style lang="scss" scoped>
+.svg-icon {
+  width: 50%;
+  height: 50%;
+}
+</style>
